@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://nsp2ss6i7a4"]
+
+[ext_resource type="Shader" uid="uid://chxv5de43gif1" path="res://Shaders/noite.gdshader" id="1_m06kh"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w7gh1"]
+shader = ExtResource("1_m06kh")
+shader_parameter/sky_color = Color(0.02, 0.02, 0.08, 1)
+shader_parameter/horizon_color = Color(0.05, 0.05, 0.15, 1)
+shader_parameter/horizon_blur = 1.0
+shader_parameter/moon_color = Color(0.9, 0.95, 1, 1)
+shader_parameter/moon_size = 0.25
+shader_parameter/moon_glow = 0.08
+shader_parameter/star_color = Color(1, 1, 1, 1)
+shader_parameter/star_density = 50.0
+shader_parameter/star_twinkle_speed = 0.0
+shader_parameter/cloud_color = Color(0.642575, 0.644654, 0.755942, 1)
+shader_parameter/cloud_edge_sharpness = 1.0
+shader_parameter/cloud_scale = 3.0
+shader_parameter/cloud_speed = 0.0
+
+[sub_resource type="Sky" id="Sky_ayucg"]
+sky_material = SubResource("ShaderMaterial_w7gh1")
+
+[sub_resource type="Environment" id="Environment_xgjke"]
+background_mode = 2
+sky = SubResource("Sky_ayucg")
+glow_enabled = true
+
+[node name="WorldEnvironment" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_xgjke")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 321, 0)

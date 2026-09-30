@@ -1,0 +1,20 @@
+# Godot 4.x - Pastas de cache e metadados internos
+.godot/
+
+# Arquivos de tradução gerados automaticamente
+*.translation
+
+# Configurações específicas do VS Code (visto na árvore do seu projeto)
+.vscode/
+
+# Arquivos temporários e logs do sistema operacional
+Thumbs.db
+.DS_Store
+*.log
+
+# Caso você decida usar C# (Mono) no futuro, estes já ficam protegidos:
+.mono/
+data_*/
+mono_crash_*.log
+*.csproj
+*.sln
