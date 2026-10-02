@@ -405,7 +405,7 @@ mass = 1200.0
 center_of_mass_mode = 1
 center_of_mass = Vector3(0, -0.2, 1.5)
 script = ExtResource("1_xx1yi")
-max_brake_force = 75.0
+max_brake_force = 90.0
 reverse_force_multiplier = 10000.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]

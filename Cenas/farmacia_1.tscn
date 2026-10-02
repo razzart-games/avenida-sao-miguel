@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://djand7ve3j18x"]
+
+[ext_resource type="PackedScene" uid="uid://b6qsrpm5lsak6" path="res://Assets/Cenario/farmacia_1.fbx" id="1_jrd3x"]
+
+[node name="farmacia_1" type="Node3D"]
+
+[node name="farmacia_1" parent="." instance=ExtResource("1_jrd3x")]

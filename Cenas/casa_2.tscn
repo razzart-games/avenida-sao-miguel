@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dp6h671kj3ux3"]
+
+[ext_resource type="PackedScene" uid="uid://cb34lkj05jd5c" path="res://Assets/Cenario/casa_2.fbx" id="1_7hmyd"]
+
+[node name="casa_1" type="Node3D"]
+
+[node name="casa_2" parent="." instance=ExtResource("1_7hmyd")]

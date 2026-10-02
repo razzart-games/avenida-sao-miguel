@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://c02vtah4jp4qj"]
+
+[ext_resource type="PackedScene" uid="uid://gbhal3bsqjm8" path="res://Assets/Cenario/contecao.fbx" id="1_fvf0u"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t44wo"]
+size = Vector3(1.5, 1.75, 21.25)
+
+[node name="Contencao" type="StaticBody3D"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="contecao" parent="." instance=ExtResource("1_fvf0u")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.867726, -0.0504012)
+shape = SubResource("BoxShape3D_t44wo")
