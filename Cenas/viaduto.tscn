@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://ba6ef0tcvyrds"]
+
+[ext_resource type="PackedScene" uid="uid://wycyssv0ykeb" path="res://Assets/Cenario/viaduto.fbx" id="1_1p1do"]
+
+[node name="viaduto" type="Node3D"]
+
+[node name="viaduto" parent="." instance=ExtResource("1_1p1do")]

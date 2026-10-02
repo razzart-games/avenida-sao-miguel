@@ -1,9 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://8pcsj7b723v6"]
+[gd_scene load_steps=9 format=3 uid="uid://8pcsj7b723v6"]
 
 [ext_resource type="PackedScene" uid="uid://cs56gqd8lo152" path="res://Cenas/av_sao_miguel.tscn" id="1_yqy7c"]
 [ext_resource type="PackedScene" uid="uid://cr8xih6unwe57" path="res://Cenas/su_7.tscn" id="2_cwd34"]
 [ext_resource type="PackedScene" uid="uid://nsp2ss6i7a4" path="res://Cenas/world_environment.tscn" id="3_amlft"]
 [ext_resource type="PackedScene" uid="uid://cv7g7rmedq4g1" path="res://Cenas/poste.tscn" id="4_cwd34"]
+[ext_resource type="PackedScene" uid="uid://ba7dinlko5vxs" path="res://Cenas/igreja.tscn" id="5_amlft"]
+[ext_resource type="PackedScene" uid="uid://cq1sq5rm81wam" path="res://Cenas/canteiro_central.tscn" id="6_kvftb"]
+[ext_resource type="PackedScene" uid="uid://tvv0wygcotu1" path="res://Cenas/davo.tscn" id="7_4ywfq"]
+[ext_resource type="PackedScene" uid="uid://ba6ef0tcvyrds" path="res://Cenas/viaduto.tscn" id="8_8eko3"]
 
 [node name="Pista_1" type="Node3D"]
 
@@ -315,3 +319,43 @@ transform = Transform3D(1.31911, 0, -4.82286, 0, 5, 0, 4.82286, 0, 1.31911, -707
 
 [node name="poste100" parent="postes" instance=ExtResource("4_cwd34")]
 transform = Transform3D(1.14447, 0, -4.86725, 0, 5, 0, 4.86725, 0, 1.14447, -7345.1, 17.8, 1234.67)
+
+[node name="cenario" type="Node" parent="."]
+
+[node name="igreja" parent="cenario" instance=ExtResource("5_amlft")]
+transform = Transform3D(0.848824, 0, 0.528675, 0, 1, 0, -0.528675, 0, 0.848824, 6607.94, 23.8329, -2086.51)
+
+[node name="canteiro_central_1" type="Node" parent="cenario"]
+
+[node name="StaticBody3D" parent="cenario/canteiro_central_1" instance=ExtResource("6_kvftb")]
+transform = Transform3D(0.291564, 0, -0.465443, 0, 0.549224, 0, 0.465443, 0, 0.291564, 6336.95, 1.31072, -2109.66)
+
+[node name="StaticBody3D2" parent="cenario/canteiro_central_1" instance=ExtResource("6_kvftb")]
+transform = Transform3D(0.295122, 0, -0.463195, 0, 0.549224, 0, 0.463195, 0, 0.295122, 6276.68, 1.31073, -2071.7)
+
+[node name="StaticBody3D3" parent="cenario/canteiro_central_1" instance=ExtResource("6_kvftb")]
+transform = Transform3D(0.318264, 0, -0.44761, 0, 0.549224, 0, 0.44761, 0, 0.318264, 6217.51, 1.31073, -2032.02)
+
+[node name="StaticBody3D4" parent="cenario/canteiro_central_1" instance=ExtResource("6_kvftb")]
+transform = Transform3D(0.297761, 0, -0.461503, 0, 0.549224, 0, 0.461503, 0, 0.297761, 6158.47, 1.31073, -1992.36)
+
+[node name="StaticBody3D5" parent="cenario/canteiro_central_1" instance=ExtResource("6_kvftb")]
+transform = Transform3D(0.336646, 0, -0.433954, 0, 0.549224, 0, 0.433954, 0, 0.336646, 6100.36, 1.31072, -1951.2)
+
+[node name="StaticBody3D6" parent="cenario/canteiro_central_1" instance=ExtResource("6_kvftb")]
+transform = Transform3D(0.34151, 0, -0.430137, 0, 0.549224, 0, 0.430137, 0, 0.34151, 6044.45, 1.31073, -1907.72)
+
+[node name="StaticBody3D7" parent="cenario/canteiro_central_1" instance=ExtResource("6_kvftb")]
+transform = Transform3D(0.34259, 0, -0.429277, 0, 0.549224, 0, 0.429277, 0, 0.34259, 5988.99, 1.31073, -1863.93)
+
+[node name="StaticBody3D8" parent="cenario/canteiro_central_1" instance=ExtResource("6_kvftb")]
+transform = Transform3D(0.369478, 0, -0.406365, 0, 0.549224, 0, 0.406365, 0, 0.369478, 5934.91, 1.31073, -1817.84)
+
+[node name="StaticBody3D9" parent="cenario/canteiro_central_1" instance=ExtResource("6_kvftb")]
+transform = Transform3D(0.385619, 0, -0.391082, 0, 0.549224, 0, 0.391082, 0, 0.385619, 5882.91, 1.31073, -1768.87)
+
+[node name="Davo" parent="cenario" instance=ExtResource("7_4ywfq")]
+transform = Transform3D(-0.553705, 0, -0.153483, 0, 0.574583, 0, 0.153483, 0, -0.553705, 5445.27, 36.2255, -1010.03)
+
+[node name="viaduto" parent="cenario" instance=ExtResource("8_8eko3")]
+transform = Transform3D(-0.333948, 0, -1.56774, 0, 1.60291, 0, 1.56774, 0, -0.333948, 4971.34, 26.1461, -1355.08)

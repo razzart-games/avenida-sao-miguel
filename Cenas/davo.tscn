@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://tvv0wygcotu1"]
+
+[ext_resource type="PackedScene" uid="uid://c33ju6v33mur2" path="res://Assets/Cenario/davo.fbx" id="1_b05kq"]
+
+[node name="Davo" type="Node3D"]
+
+[node name="davo" parent="." instance=ExtResource("1_b05kq")]
