@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmr0cdrbwkh7x"]
+
+[ext_resource type="PackedScene" uid="uid://bo20q28c60vep" path="res://Assets/Cenario/escola_1.fbx" id="1_r4oqg"]
+
+[node name="escola_1" type="Node3D"]
+
+[node name="escola_1" parent="." instance=ExtResource("1_r4oqg")]

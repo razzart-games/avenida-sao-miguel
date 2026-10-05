@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bntc1s26wp5ei"]
+
+[ext_resource type="PackedScene" uid="uid://bw2uq80fm7y0g" path="res://Assets/Cenario/igreja_1.fbx" id="1_dn65y"]
+
+[node name="igreja_1" type="Node3D"]
+
+[node name="igreja_1" parent="." instance=ExtResource("1_dn65y")]

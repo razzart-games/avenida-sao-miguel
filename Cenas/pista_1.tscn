@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://8pcsj7b723v6"]
+[gd_scene load_steps=37 format=3 uid="uid://8pcsj7b723v6"]
 
 [ext_resource type="PackedScene" uid="uid://cs56gqd8lo152" path="res://Cenas/av_sao_miguel.tscn" id="1_yqy7c"]
 [ext_resource type="PackedScene" uid="uid://cr8xih6unwe57" path="res://Cenas/su_7.tscn" id="2_cwd34"]
@@ -16,10 +16,26 @@
 [ext_resource type="PackedScene" uid="uid://01jc6sij1536" path="res://Cenas/faixa_de_pesdestre.tscn" id="13_xwoqy"]
 [ext_resource type="PackedScene" uid="uid://u7p33jqhfgcj" path="res://Cenas/loja_4.tscn" id="14_giyxb"]
 [ext_resource type="PackedScene" uid="uid://c56fhurfgsfix" path="res://Assets/Cenario/casa_1.fbx" id="14_p3mec"]
+[ext_resource type="PackedScene" uid="uid://cci1pxcrg8yc" path="res://Cenas/loja_5.tscn" id="15_3q2vq"]
 [ext_resource type="PackedScene" uid="uid://ccsitba7k7g44" path="res://Cenas/muro.tscn" id="15_w10r4"]
 [ext_resource type="PackedScene" uid="uid://dp6h671kj3ux3" path="res://Cenas/casa_2.tscn" id="16_c6l13"]
+[ext_resource type="PackedScene" uid="uid://bjbp43lo87ut7" path="res://Cenas/loja_6.tscn" id="16_ukdq7"]
+[ext_resource type="PackedScene" uid="uid://bbu8f8sbmrkc3" path="res://Cenas/loja_7.tscn" id="17_nu4l1"]
+[ext_resource type="PackedScene" uid="uid://drlujjoy881b7" path="res://Cenas/loja_8.tscn" id="18_sln5x"]
 [ext_resource type="PackedScene" uid="uid://caso3on3ke57x" path="res://Cenas/posto_1.tscn" id="19_0ic3e"]
+[ext_resource type="PackedScene" uid="uid://c6xaak7rq5ko4" path="res://Cenas/loja_9.tscn" id="19_j4k32"]
+[ext_resource type="PackedScene" uid="uid://d3aelp78dg6e5" path="res://Cenas/loja_10.tscn" id="20_dwt4g"]
 [ext_resource type="PackedScene" uid="uid://gumew55mpfce" path="res://Cenas/padaria_1.tscn" id="20_j7vqa"]
+[ext_resource type="PackedScene" uid="uid://ftigphgbc1eo" path="res://Cenas/loja_4_cor_alternativa.tscn" id="21_nkdc5"]
+[ext_resource type="PackedScene" uid="uid://dx8rufwjfkfhc" path="res://Cenas/loja_11.tscn" id="22_e0eij"]
+[ext_resource type="PackedScene" uid="uid://bv1smav7vkows" path="res://Cenas/loja_12.tscn" id="23_07ike"]
+[ext_resource type="PackedScene" uid="uid://2f7lhrmcai6f" path="res://Cenas/loja_13.tscn" id="24_vb18h"]
+[ext_resource type="PackedScene" uid="uid://djpyw71cskyyb" path="res://Cenas/loja_14.tscn" id="25_07ike"]
+[ext_resource type="PackedScene" uid="uid://do3ia2xrlpj1t" path="res://Cenas/loja_15.tscn" id="26_8rhft"]
+[ext_resource type="PackedScene" uid="uid://cl2icnimyu3jp" path="res://Cenas/loja_17.tscn" id="26_mj1wd"]
+[ext_resource type="PackedScene" uid="uid://bku3y0mvqwaqf" path="res://Cenas/loja_16.tscn" id="27_tq5xd"]
+[ext_resource type="PackedScene" uid="uid://bntc1s26wp5ei" path="res://Cenas/igreja_1.tscn" id="35_lu3pi"]
+[ext_resource type="PackedScene" uid="uid://bmr0cdrbwkh7x" path="res://Cenas/escola_1.tscn" id="36_6h5ni"]
 
 [node name="Pista_1" type="Node3D"]
 
@@ -334,9 +350,6 @@ transform = Transform3D(1.14447, 0, -4.86725, 0, 5, 0, 4.86725, 0, 1.14447, -734
 
 [node name="cenario" type="Node" parent="."]
 
-[node name="igreja" parent="cenario" instance=ExtResource("5_amlft")]
-transform = Transform3D(0.848824, 0, 0.528675, 0, 1, 0, -0.528675, 0, 0.848824, 6607.94, 23.8329, -2086.51)
-
 [node name="canteiro_central_1" type="Node" parent="cenario"]
 
 [node name="StaticBody3D6" parent="cenario/canteiro_central_1" instance=ExtResource("6_kvftb")]
@@ -350,9 +363,6 @@ transform = Transform3D(0.369478, 0, -0.406365, 0, 0.549224, 0, 0.406365, 0, 0.3
 
 [node name="StaticBody3D9" parent="cenario/canteiro_central_1" instance=ExtResource("6_kvftb")]
 transform = Transform3D(0.385619, 0, -0.391082, 0, 0.549224, 0, 0.391082, 0, 0.385619, 5882.91, 1.31073, -1768.87)
-
-[node name="Davo" parent="cenario" instance=ExtResource("7_4ywfq")]
-transform = Transform3D(-0.553705, 0, -0.153483, 0, 0.574583, 0, 0.153483, 0, -0.553705, 5445.27, 36.2255, -1010.03)
 
 [node name="viaduto" parent="cenario" instance=ExtResource("8_8eko3")]
 transform = Transform3D(-0.333948, 0, -1.56774, 0, 1.60291, 0, 1.56774, 0, -0.333948, 4971.34, 26.1461, -1355.08)
@@ -474,17 +484,107 @@ transform = Transform3D(0.0231903, 0, -0.548734, 0, 0.549224, 0, 0.548734, 0, 0.
 [node name="farmacia_1" parent="cenario/lojas" instance=ExtResource("10_tbhl8")]
 transform = Transform3D(1.78643, 0, 0, 0, 1.78643, 0, 0, 0, 1.78643, 6604.2, 9.38619, -2292.53)
 
+[node name="farmacia_1_copia" parent="cenario/lojas" instance=ExtResource("10_tbhl8")]
+transform = Transform3D(1.52212, 0, 0.935134, 0, 1.78643, 0, -0.935134, 0, 1.52212, 6264.49, 9.38619, -2117.2)
+
 [node name="loja_1" parent="cenario/lojas" instance=ExtResource("11_88hh5")]
-transform = Transform3D(6.08249, 0, -15.1368, 0, 16.3131, 0, 15.1368, 0, 6.08249, 6549.4, 17.5455, -2278.91)
+transform = Transform3D(2.46482, 0, -9.81941, 0, 10.124, 0, 9.81941, 0, 2.46482, 6575.21, 11.0958, -2278.39)
 
 [node name="loja_2" parent="cenario/lojas" instance=ExtResource("12_xv6lx")]
-transform = Transform3D(2.49503, 0, 1.08502, 0, 2.72074, 0, -1.08502, 0, 2.49503, 6487.4, 20.4038, -2254.96)
+transform = Transform3D(1.63167, 0, 0.709567, 0, 1.77927, 0, -0.709567, 0, 1.63167, 6530.67, 13.5323, -2265.96)
 
 [node name="loja_3" parent="cenario/lojas" instance=ExtResource("13_w10r4")]
-transform = Transform3D(2.12307, 0, 1.2074, 0, 2.44238, 0, -1.2074, 0, 2.12307, 6385.55, 12.146, -2215.48)
+transform = Transform3D(1.6643, 0, 0.776046, 0, 1.83634, 0, -0.776046, 0, 1.6643, 6463.37, 9.26759, -2238.68)
 
 [node name="loja_4" parent="cenario/lojas" instance=ExtResource("14_giyxb")]
-transform = Transform3D(7.66468, 0, 4.93368, 0, 7.23281, 0, -4.93368, 0, 7.66468, 6280.12, 28.1609, -2200.35)
+transform = Transform3D(4.25517, 0, 2.39757, 0, 3.87547, 0, -2.39757, 0, 4.25517, 6402.66, 13.4198, -2224.1)
+
+[node name="loja_5" parent="cenario/lojas" instance=ExtResource("15_3q2vq")]
+transform = Transform3D(-2.68604, 0, -1.63873, 0, 2.61156, 0, 1.63873, 0, -2.68604, 6377.46, 16.5184, -2046.8)
+
+[node name="loja_6" parent="cenario/lojas" instance=ExtResource("16_ukdq7")]
+transform = Transform3D(-1.47299, 0, -0.901802, 0, 1.72712, 0, 0.901802, 0, -1.47299, 6316.48, 12.8909, -2030.07)
+
+[node name="loja_7" parent="cenario/lojas" instance=ExtResource("17_nu4l1")]
+transform = Transform3D(-1.3229, 0, -0.805442, 0, 1.5488, 0, 0.805442, 0, -1.3229, 6279.66, 9.77674, -2011.81)
+
+[node name="loja_8" parent="cenario/lojas" instance=ExtResource("18_sln5x")]
+transform = Transform3D(0.870794, 0, 0.491649, 0, 1, 0, -0.491649, 0, 0.870794, 6389.97, 13.1125, -2199.24)
+
+[node name="loja_9" parent="cenario/lojas" instance=ExtResource("19_j4k32")]
+transform = Transform3D(1.12735, 0, 0.662627, 0, 1.30766, 0, -0.662627, 0, 1.12735, 6373.79, 7.80989, -2177.56)
+
+[node name="loja_10" parent="cenario/lojas" instance=ExtResource("20_dwt4g")]
+transform = Transform3D(1.06452, 0, 0.616582, 0, 1.23019, 0, -0.616582, 0, 1.06452, 6336.44, 11.2009, -2179.62)
+
+[node name="loja_4_cor_alternativa" parent="cenario/lojas" instance=ExtResource("21_nkdc5")]
+transform = Transform3D(4.07247, 0, 2.48526, 0, 4.7709, 0, -2.48526, 0, 4.07247, 6227.75, 18.7612, -2117.7)
+
+[node name="loja_8_copia" parent="cenario/lojas" instance=ExtResource("18_sln5x")]
+transform = Transform3D(0.860769, 0, 0.508997, 0, 1, 0, -0.508997, 0, 0.860769, 6216.26, 13.1125, -2091.69)
+
+[node name="loja_6_copia" parent="cenario/lojas" instance=ExtResource("16_ukdq7")]
+transform = Transform3D(1.39466, 0, 1.01876, 0, 1.72712, 0, -1.01876, 0, 1.39466, 6002.5, 12.8909, -1952.01)
+
+[node name="loja_1_copia" parent="cenario/lojas" instance=ExtResource("11_88hh5")]
+transform = Transform3D(-5.85919, 0, 8.25628, 0, 10.124, 0, -8.25628, 0, -5.85919, 6147.44, 11.0958, -1932.13)
+
+[node name="loja_10_copia" parent="cenario/lojas" instance=ExtResource("20_dwt4g")]
+transform = Transform3D(-0.998904, 0, -0.718024, 0, 1.23019, 0, 0.718024, 0, -0.998904, 6133.59, 11.2009, -1901.87)
+
+[node name="loja_11" parent="cenario/lojas" instance=ExtResource("22_e0eij")]
+transform = Transform3D(2.78505, 0, 2.25465, 0, 3.58329, 0, -2.25465, 0, 2.78505, 5906.73, 25.3676, -1932.91)
+
+[node name="loja_12" parent="cenario/lojas" instance=ExtResource("23_07ike")]
+transform = Transform3D(2.39038, 0, 2.26253, 0, 3.29134, 0, -2.26253, 0, 2.39038, 5818.49, 33.2095, -1860.06)
+
+[node name="loja_13" parent="cenario/lojas" instance=ExtResource("24_vb18h")]
+transform = Transform3D(-2.61959, 0, -1.80423, 0, 3.1808, 0, 1.80423, 0, -2.61959, 6095.58, 10.8047, -1877.05)
+
+[node name="loja_2_copia_1" parent="cenario/lojas" instance=ExtResource("12_xv6lx")]
+transform = Transform3D(-1.41843, 0, -1.07419, 0, 1.77927, 0, 1.07419, 0, -1.41843, 6034.21, 13.5323, -1849.99)
+
+[node name="loja_3_copia" parent="cenario/lojas" instance=ExtResource("13_w10r4")]
+transform = Transform3D(-1.4043, 0, -1.18325, 0, 1.83634, 0, 1.18325, 0, -1.4043, 6008.75, 9.26759, -1814.73)
+
+[node name="loja_5_copia_1" parent="cenario/lojas" instance=ExtResource("15_3q2vq")]
+transform = Transform3D(-2.39822, 0, -2.03686, 0, 2.61156, 0, 2.03686, 0, -2.39822, 5989.75, 16.5184, -1768.24)
+
+[node name="loja_7_copia" parent="cenario/lojas" instance=ExtResource("17_nu4l1")]
+transform = Transform3D(1.07665, 0, 1.11338, 0, 1.5488, 0, -1.11338, 0, 1.07665, 5787.36, 9.77674, -1757.5)
+
+[node name="loja_9_copia" parent="cenario/lojas" instance=ExtResource("19_j4k32")]
+transform = Transform3D(0.880327, 0, 0.966957, 0, 1.30766, 0, -0.966957, 0, 0.880327, 5774.99, 7.80989, -1724.91)
+
+[node name="loja_14" parent="cenario/lojas" instance=ExtResource("25_07ike")]
+transform = Transform3D(-1.39246, 0, 1.22072, 0, 1.85178, 0, -1.22072, 0, -1.39246, 5790.29, 18.5554, -1613.86)
+
+[node name="loja_15" parent="cenario/lojas" instance=ExtResource("26_8rhft")]
+transform = Transform3D(2.09607, 0, 2.30703, 0, 3.11704, 0, -2.30703, 0, 2.09607, 5741.42, 14.6003, -1705.91)
+
+[node name="loja_16" parent="cenario/lojas" instance=ExtResource("27_tq5xd")]
+transform = Transform3D(-0.652363, 0, -0.757907, 0, 1, 0, 0.757907, 0, -0.652363, 5759.56, 13.1491, -1580.1)
+
+[node name="loja_2_copia_2" parent="cenario/lojas" instance=ExtResource("12_xv6lx")]
+transform = Transform3D(-1.15245, 0, -1.35561, 0, 1.77927, 0, 1.35561, 0, -1.15245, 5733.62, 13.5323, -1533.04)
+
+[node name="loja_13_copia_1" parent="cenario/lojas" instance=ExtResource("24_vb18h")]
+transform = Transform3D(2.17725, 0, 2.31885, 0, 3.1808, 0, -2.31885, 0, 2.17725, 5626.25, 10.8047, -1574.32)
+
+[node name="loja_14_copia_1" parent="cenario/lojas" instance=ExtResource("25_07ike")]
+transform = Transform3D(1.17556, 0, 1.43079, 0, 1.85178, 0, -1.43079, 0, 1.17556, 5599.63, 18.5554, -1528.72)
+
+[node name="loja_5_copia_2" parent="cenario/lojas" instance=ExtResource("15_3q2vq")]
+transform = Transform3D(2.11375, 0, 2.33073, 0, 2.61156, 0, -2.33073, 0, 2.11375, 5549.22, 16.5184, -1523.45)
+
+[node name="loja_15_copia_1" parent="cenario/lojas" instance=ExtResource("26_8rhft")]
+transform = Transform3D(2.56784, 0, 1.76694, 0, 3.11704, 0, -1.76694, 0, 2.56784, 5464.88, 14.6003, -1396.93)
+
+[node name="loja_16_copia_1" parent="cenario/lojas" instance=ExtResource("27_tq5xd")]
+transform = Transform3D(0.91886, 0, 0.394584, 0, 1, 0, -0.394584, 0, 0.91886, 5421.14, 13.1491, -1366.78)
+
+[node name="loja_17" parent="cenario/lojas" instance=ExtResource("26_mj1wd")]
+transform = Transform3D(4.04462, 0, 1.00064, 0, 4.16656, 0, -1.00064, 0, 4.04462, 5372.21, -1.50252, -1359.23)
 
 [node name="faixas de pedestre" type="Node" parent="cenario"]
 
@@ -554,22 +654,63 @@ transform = Transform3D(1.36235, -1.39133e-08, -7.04776, 2.90852e-09, 7.13186, -
 [node name="casas" type="Node" parent="cenario"]
 
 [node name="casa_1" parent="cenario/casas" instance=ExtResource("14_p3mec")]
-transform = Transform3D(3.86119, 0, 2.09785, 0, 4.39429, 0, -2.09785, 0, 3.86119, 6428.16, 9.39531, -2245.2)
+transform = Transform3D(2.57351, 0, 1.12766, 0, 2.80973, 0, -1.12766, 0, 2.57351, 6495.64, 6.20419, -2253.26)
 
 [node name="casa_2" parent="cenario/casas" instance=ExtResource("16_c6l13")]
-transform = Transform3D(8.59767, 0, 5.65191, 0, 8.39733, 0, -5.65191, 0, 8.59767, 6352.24, 14.0076, -2198.18)
+transform = Transform3D(5.03248, 0, 2.56373, 0, 4.60948, 0, -2.56373, 0, 5.03248, 6442.8, 7.93524, -2223.82)
+
+[node name="casa_2_copia" parent="cenario/casas" instance=ExtResource("16_c6l13")]
+transform = Transform3D(4.86097, 0, 2.87568, 0, 4.60948, 0, -2.87568, 0, 4.86097, 6315.6, 7.93524, -2152.7)
+
+[node name="casa_1_copia_1" parent="cenario/casas" instance=ExtResource("14_p3mec")]
+transform = Transform3D(-2.00469, 0, -1.9687, 0, 2.80973, 0, 1.9687, 0, -2.00469, 5616.55, 6.20419, -1399.85)
 
 [node name="muros" type="Node" parent="cenario"]
 
-[node name="muro" parent="cenario/muros" instance=ExtResource("15_w10r4")]
+[node name="muro_1" parent="cenario/muros" instance=ExtResource("15_w10r4")]
 transform = Transform3D(0.109084, 0, 0.179489, 0, 0.210037, 0, -0.179489, 0, 0.109084, 6705.99, 6.847, -2245.32)
+
+[node name="muro_2" parent="cenario/muros" instance=ExtResource("15_w10r4")]
+transform = Transform3D(-0.118401, 0, 0.173485, 0, 0.210037, 0, -0.173485, 0, -0.118401, 6163.97, 6.847, -2036.43)
+
+[node name="muro_3" parent="cenario/muros" instance=ExtResource("15_w10r4")]
+transform = Transform3D(-0.118401, 0, 0.173485, 0, 0.210037, 0, -0.173485, 0, -0.118401, 6201.67, 6.847, -1982.03)
+
+[node name="muro_4" parent="cenario/muros" instance=ExtResource("15_w10r4")]
+transform = Transform3D(-0.130886, 0, 0.16427, 0, 0.210037, 0, -0.16427, 0, -0.130886, 5902.17, 6.847, -1731.49)
+
+[node name="muro_5" parent="cenario/muros" instance=ExtResource("15_w10r4")]
+transform = Transform3D(-0.161862, 0, 0.133852, 0, 0.210037, 0, -0.133852, 0, -0.161862, 5703.16, 6.847, -1630.55)
+
+[node name="muro_6" parent="cenario/muros" instance=ExtResource("15_w10r4")]
+transform = Transform3D(-0.142482, 0, 0.15432, 0, 0.210037, 0, -0.15432, 0, -0.142482, 5659.85, 6.847, -1471.78)
 
 [node name="postos" type="Node" parent="cenario"]
 
 [node name="posto_1" parent="cenario/postos" instance=ExtResource("19_0ic3e")]
-transform = Transform3D(3.37537, 0, 2.38539, 0, 4.13319, 0, -2.38539, 0, 3.37537, 6045.68, 33.4071, -2004.71)
+transform = Transform3D(2.24533, 0, 1.58679, 0, 2.74944, 0, -1.58679, 0, 2.24533, 6054.97, 22.4055, -1995.3)
+
+[node name="posto_1_copia" parent="cenario/postos" instance=ExtResource("19_0ic3e")]
+transform = Transform3D(1.97467, 0, 1.91313, 0, 2.74944, 0, -1.91313, 0, 1.97467, 5516.25, 22.4055, -1447.65)
 
 [node name="padaria" type="Node" parent="cenario"]
 
 [node name="padaria_1" parent="cenario/padaria" instance=ExtResource("20_j7vqa")]
-transform = Transform3D(-2.37626, 0, 4.18689, 0, 4.81421, 0, -4.18689, 0, -2.37626, 6382.14, 30.2905, -2000.87)
+transform = Transform3D(-1.38177, 0, 2.2943, 0, 2.67826, 0, -2.2943, 0, -1.38177, 6433.19, 17.0935, -2083.8)
+
+[node name="padaria_1_copia_1" parent="cenario/padaria" instance=ExtResource("20_j7vqa")]
+transform = Transform3D(-1.90095, 0, -1.88666, 0, 2.67826, 0, 1.88666, 0, -1.90095, 5855.13, 17.0935, -1641.85)
+
+[node name="outros" type="Node" parent="cenario"]
+
+[node name="igreja" parent="cenario/outros" instance=ExtResource("5_amlft")]
+transform = Transform3D(-0.153888, 0, 0.739974, 0, 0.755806, 0, -0.739974, 0, -0.153888, 6621.64, 24.4434, -2096.23)
+
+[node name="Davo" parent="cenario/outros" instance=ExtResource("7_4ywfq")]
+transform = Transform3D(-0.823088, 0, -0.213057, 0, 0.406569, 0, 0.228154, 0, -0.768622, 5430.67, 25.7924, -912.009)
+
+[node name="igreja_1" parent="cenario/outros" instance=ExtResource("35_lu3pi")]
+transform = Transform3D(2.99207, 3.87088e-08, 0.885553, -3.87088e-08, 3.12037, -5.60802e-09, -0.885553, -5.60802e-09, 2.99207, 5244.58, 19.2119, -1395.42)
+
+[node name="escola_1" parent="cenario/outros" instance=ExtResource("36_6h5ni")]
+transform = Transform3D(2.43123, 0, -0.262012, 0, 2.44531, 0, 0.262012, 0, 2.43123, 5129.77, 0.0852879, -1339.57)
