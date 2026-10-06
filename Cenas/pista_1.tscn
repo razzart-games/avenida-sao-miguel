@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://8pcsj7b723v6"]
+[gd_scene load_steps=39 format=3 uid="uid://8pcsj7b723v6"]
 
 [ext_resource type="PackedScene" uid="uid://cs56gqd8lo152" path="res://Cenas/av_sao_miguel.tscn" id="1_yqy7c"]
 [ext_resource type="PackedScene" uid="uid://cr8xih6unwe57" path="res://Cenas/su_7.tscn" id="2_cwd34"]
@@ -33,9 +33,11 @@
 [ext_resource type="PackedScene" uid="uid://djpyw71cskyyb" path="res://Cenas/loja_14.tscn" id="25_07ike"]
 [ext_resource type="PackedScene" uid="uid://do3ia2xrlpj1t" path="res://Cenas/loja_15.tscn" id="26_8rhft"]
 [ext_resource type="PackedScene" uid="uid://cl2icnimyu3jp" path="res://Cenas/loja_17.tscn" id="26_mj1wd"]
+[ext_resource type="PackedScene" uid="uid://lqroaunqgxi2" path="res://Cenas/loja_18.tscn" id="27_6h5ni"]
 [ext_resource type="PackedScene" uid="uid://bku3y0mvqwaqf" path="res://Cenas/loja_16.tscn" id="27_tq5xd"]
 [ext_resource type="PackedScene" uid="uid://bntc1s26wp5ei" path="res://Cenas/igreja_1.tscn" id="35_lu3pi"]
 [ext_resource type="PackedScene" uid="uid://bmr0cdrbwkh7x" path="res://Cenas/escola_1.tscn" id="36_6h5ni"]
+[ext_resource type="PackedScene" uid="uid://dnn8882litpgw" path="res://Cenas/predio_1.tscn" id="37_lu3pi"]
 
 [node name="Pista_1" type="Node3D"]
 
@@ -365,7 +367,7 @@ transform = Transform3D(0.369478, 0, -0.406365, 0, 0.549224, 0, 0.406365, 0, 0.3
 transform = Transform3D(0.385619, 0, -0.391082, 0, 0.549224, 0, 0.391082, 0, 0.385619, 5882.91, 1.31073, -1768.87)
 
 [node name="viaduto" parent="cenario" instance=ExtResource("8_8eko3")]
-transform = Transform3D(-0.333948, 0, -1.56774, 0, 1.60291, 0, 1.56774, 0, -0.333948, 4971.34, 26.1461, -1355.08)
+transform = Transform3D(-0.333948, 0, -1.56774, 0, 1.60291, 0, 1.56774, 0, -0.333948, 4971.34, 29.056, -1355.08)
 
 [node name="contecao" type="Node" parent="cenario"]
 
@@ -586,6 +588,9 @@ transform = Transform3D(0.91886, 0, 0.394584, 0, 1, 0, -0.394584, 0, 0.91886, 54
 [node name="loja_17" parent="cenario/lojas" instance=ExtResource("26_mj1wd")]
 transform = Transform3D(4.04462, 0, 1.00064, 0, 4.16656, 0, -1.00064, 0, 4.04462, 5372.21, -1.50252, -1359.23)
 
+[node name="loja_18" parent="cenario/lojas" instance=ExtResource("27_6h5ni")]
+transform = Transform3D(21.2411, 0, 1.04109, 0, 11.2506, 0, -1.04109, 0, 21.2411, 4631.27, 17.422, -1571.86)
+
 [node name="faixas de pedestre" type="Node" parent="cenario"]
 
 [node name="faixa de pesdestre" parent="cenario/faixas de pedestre" instance=ExtResource("13_xwoqy")]
@@ -714,3 +719,6 @@ transform = Transform3D(2.99207, 3.87088e-08, 0.885553, -3.87088e-08, 3.12037, -
 
 [node name="escola_1" parent="cenario/outros" instance=ExtResource("36_6h5ni")]
 transform = Transform3D(2.43123, 0, -0.262012, 0, 2.44531, 0, 0.262012, 0, 2.43123, 5129.77, 0.0852879, -1339.57)
+
+[node name="predio_1" parent="cenario/outros" instance=ExtResource("37_lu3pi")]
+transform = Transform3D(-16.2641, 0, -0.116955, 0, 16.2645, 0, 0.116955, 0, -16.2641, 4734.08, 75.9395, -1159.36)
