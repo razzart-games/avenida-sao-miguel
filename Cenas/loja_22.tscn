@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkyyn82b2dnik"]
+
+[ext_resource type="PackedScene" uid="uid://c3mtnbaxna1yo" path="res://Assets/Cenario/loja_22.fbx" id="1_muiit"]
+
+[node name="loja_22" type="Node3D"]
+
+[node name="loja_22" parent="." instance=ExtResource("1_muiit")]

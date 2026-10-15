@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfkekrw52jn20"]
+
+[ext_resource type="PackedScene" uid="uid://7ao1mnnvaudg" path="res://Assets/Cenario/loja_26.fbx" id="1_vddwj"]
+
+[node name="loja_26" type="Node3D"]
+
+[node name="loja_26" parent="." instance=ExtResource("1_vddwj")]

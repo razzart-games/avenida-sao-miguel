@@ -6,17 +6,17 @@
 shader = ExtResource("1_m06kh")
 shader_parameter/sky_color = Color(0.02, 0.02, 0.08, 1)
 shader_parameter/horizon_color = Color(0.05, 0.05, 0.15, 1)
-shader_parameter/horizon_blur = 1.0
+shader_parameter/horizon_blur = 0.15
 shader_parameter/moon_color = Color(0.9, 0.95, 1, 1)
-shader_parameter/moon_size = 0.25
+shader_parameter/moon_size = 0.04
 shader_parameter/moon_glow = 0.08
 shader_parameter/star_color = Color(1, 1, 1, 1)
 shader_parameter/star_density = 50.0
-shader_parameter/star_twinkle_speed = 0.0
-shader_parameter/cloud_color = Color(0.642575, 0.644654, 0.755942, 1)
-shader_parameter/cloud_edge_sharpness = 1.0
+shader_parameter/star_twinkle_speed = 1.5
+shader_parameter/cloud_color = Color(0.3, 0.3, 0.4, 1)
+shader_parameter/cloud_edge_sharpness = 0.15
 shader_parameter/cloud_scale = 3.0
-shader_parameter/cloud_speed = 0.0
+shader_parameter/cloud_speed = 0.015
 
 [sub_resource type="Sky" id="Sky_ayucg"]
 sky_material = SubResource("ShaderMaterial_w7gh1")
