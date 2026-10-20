@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=4 uid="uid://cr8xih6unwe57"]
+[gd_scene load_steps=28 format=4 uid="uid://cr8xih6unwe57"]
 
 [ext_resource type="Script" uid="uid://brgy55gefwap1" path="res://Scripts/su_7.gd" id="1_xx1yi"]
 [ext_resource type="Shader" uid="uid://bhqnwrm0m36vy" path="res://Shaders/vidro.gdshader" id="2_dlj48"]
@@ -325,6 +325,10 @@ shader_parameter/rugosidade = 0.25
 shader_parameter/verniz = 1.0
 shader_parameter/rugosidade_verniz = 0.05
 
+[sub_resource type="PlaneMesh" id="PlaneMesh_1tdlj"]
+material = SubResource("StandardMaterial3D_fttnp")
+size = Vector2(2.75, 0.125)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5yrf2"]
 resource_name = "Pneu.001"
 vertex_color_use_as_albedo = true
@@ -418,6 +422,32 @@ surface_material_override/0 = SubResource("ShaderMaterial_lwkbb")
 surface_material_override/2 = SubResource("ShaderMaterial_g2u8u")
 surface_material_override/5 = SubResource("ShaderMaterial_garxh")
 
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
+transform = Transform3D(1, 1.50996e-07, 1.50996e-07, -1.50996e-07, -4.37114e-08, 1, 1.50996e-07, -1, -4.37114e-08, 6.64233e-07, 0.678902, -4.39901)
+mesh = SubResource("PlaneMesh_1tdlj")
+
+[node name="farol_direito" type="SpotLight3D" parent="CollisionShape3D"]
+transform = Transform3D(1, 1.32005e-14, 3.01992e-07, -1.32005e-14, -1, 8.74228e-08, 3.01992e-07, -8.74228e-08, -1, -1.29064, 0.488351, 4.06664)
+light_energy = 50.0
+light_indirect_energy = 5.0
+light_volumetric_fog_energy = 5.0
+light_size = 1.0
+light_specular = 1.0
+shadow_enabled = true
+spot_range = 19.8219
+spot_angle = 15.452
+
+[node name="farol_direito2" type="SpotLight3D" parent="CollisionShape3D"]
+transform = Transform3D(1, 1.32005e-14, 3.01992e-07, -1.32005e-14, -1, 8.74228e-08, 3.01992e-07, -8.74228e-08, -1, 1.291, 0.488, 4.067)
+light_energy = 50.0
+light_indirect_energy = 5.0
+light_volumetric_fog_energy = 5.0
+light_size = 1.0
+light_specular = 1.0
+shadow_enabled = true
+spot_range = 19.8219
+spot_angle = 15.452
+
 [node name="Roda Dianteira Direita" type="VehicleWheel3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.60111, -0.640817, 2.93464)
 use_as_steering = true
@@ -494,8 +524,9 @@ stream = ExtResource("6_fkivw")
 [node name="CameraPivot" type="Node3D" parent="." node_paths=PackedStringArray("carro", "camera")]
 script = ExtResource("7_1tdlj")
 carro = NodePath("..")
+max_yaw = 0.2
 camera = NodePath("Camera3D")
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.38749e-06, 3.16148, -15.8117)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.35069e-06, 3.16148, -22.1906)
 current = true
