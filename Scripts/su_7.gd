@@ -4,7 +4,7 @@ extends VehicleBody3D
 @export var max_engine_force : float = 50000.0  # por roda de tração (2 rodas traseiras)
 @export var max_speed_kmh : float = 5000.0       # a força só cai de verdade perto dessa velocidade
 @export var throttle_speed : float = 30.0        # quão rápido o acelerador "sobe" (0 -> 1 em ~0,3 s)
-@export var max_brake_force : float = 50.0      # para massa 1800, 45-55 é freada forte
+@export var max_brake_force : float = 90.0      # para massa 1800, 45-55 é freada forte
 @export var reverse_force_multiplier : float = 0.1 # Força da ré (% da força do motor)
 @export var max_reverse_speed_kmh : float = 2500.0   # Velocidade máxima da ré
 
