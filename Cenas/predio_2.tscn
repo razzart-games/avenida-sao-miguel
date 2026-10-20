@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bb043pid3vaxw"]
+
+[ext_resource type="PackedScene" uid="uid://c0j3eiduqmgu8" path="res://Assets/Cenario/predio_2.fbx" id="1_7upxn"]
+
+[node name="predio_2" type="Node3D"]
+
+[node name="predio_2" parent="." instance=ExtResource("1_7upxn")]
